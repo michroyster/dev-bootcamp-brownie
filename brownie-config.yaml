@@ -14,10 +14,12 @@ compiler:
 # automatically fetch contract sources from Etherscan
 autofetch_sources: True
 # Uncomment to use the .env file
-# dotenv: .env
+dotenv: .env
 # set a custom mnemonic for the development network
 networks:
   default: development
+  # default: ganache
+  # default: mainnet-fork
   development:
     keyhash: '0x6c3699283bda56ad74f6b855546325b68d482e983852a7a82979cc4807b641f4'
     fee: 100000000000000000
